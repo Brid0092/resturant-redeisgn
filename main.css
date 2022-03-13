@@ -220,7 +220,6 @@ h1 {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: ;
     gap:5rem;
     padding-top: 30px; 
 }
@@ -551,6 +550,169 @@ footer {
         padding-top: 20px;
     }
 }
+
+/* START OF ABOUT US PAGE NOT INCLUDING THE NAV OR FOOTER  */
+.title {
+    padding: 25px;
+}
+
+.mission {
+    margin-top: 25px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 50px;
+    background-color: orange;
+    color: white;
+}
+.aboutus {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.space {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.about {
+    border: 2px solid orange;
+}
+
+.last {
+    margin-bottom:30px;
+}
+/* footer */
+footer {
+    padding-top: 25px;
+}
+.footers {
+    background-color: orange;
+ }
+
+.bottom {
+    position:relative;
+    margin: 0 auto;
+    max-width: 100vw;
+    display: grid;
+    align-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    padding-top: 30px; 
+    padding-bottom: 30px;
+}
+
+.information {
+    font-size: 18px;
+    padding: 5px;
+}
+.footer-01 {
+    text-align: left;
+}
+
+.footer-o2 {
+    padding-top: 27px;
+    text-align: left;
+}
+
+.footer-o3 {
+    display: inline-block;
+    padding-top: 20px;
+}
+
+#social li {
+    display:inline-block;
+}
+
+.footer-o4 {
+    padding-top: 20px;
+}
+
+/* START OF SERVICES PAGE NOT INCLUDING THE NAV OR FOOTER */
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    margin-top: 10px;
+    
+
+ }
+.service {
+    position:relative;
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(3, 1fr);
+    gap:20px;
+    padding-top: 30px; 
+    padding-bottom: 30px;
+}
+
+
+.sushi-horizontal {
+    width: 100%;
+    height: 252px;
+    width: 1782px;
+}
+
+.service-text {
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background-color: lightskyblue;
+}
+
+
+/* footer */
+footer {
+    padding-top: 25px;
+}
+.footers {
+    background-color: orange;
+ }
+
+.bottom {
+    position:relative;
+    margin: 0 auto;
+    max-width: 100vw;
+    display: grid;
+    align-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    padding-top: 30px; 
+    padding-bottom: 30px;
+}
+
+.information {
+    font-size: 18px;
+    padding: 5px;
+}
+.footer-01 {
+    text-align: left;
+}
+
+.footer-o2 {
+    padding-top: 27px;
+    text-align: left;
+}
+
+.footer-o3 {
+    display: inline-block;
+    padding-top: 20px;
+}
+
+#social li {
+    display:inline-block;
+}
+
+.footer-o4 {
+    padding-top: 20px;
+}
+
 /* https://www.freepnglogos.com/images/shopping-cart-20391.html */
 /* https://www.freeiconspng.com/downloadimg/41944 */
 
