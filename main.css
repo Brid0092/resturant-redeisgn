@@ -12,526 +12,543 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 
 /* CSS RESET */
 
-
-html {
-    height: 100%;
-    margin: auto;
-    overflow:visible;
-}
-
-body {
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    text-align: center;
-}
-
-header {
-    background-color: white;
-}
-
-.blue {
-    background-color: aqua;
-    padding: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-}
-
-header li {
-    display: inline;
-    padding-left: 60px;
-}
-
-header li a {
-    color:black;
-    text-decoration: none;
-    padding: 13px;
-    transition: 0.3 ease-in;
-}
-
-header li:hover {
-    color:beige;
-}
-
-header li a:hover {
-    color:beige;
-}
-
-.logo {
-    width: 300px;
-    height: 250px;
-
-}
-
-.logodiv {
-    background-color:white;
-    height: 200px;
-}
-
-#cart-logo {
-    width: 30px;
-    height: 30px;
-}
-
-/* END OF NAV BAR CSS */
-
-.main-image {
-    position: relative;
-    background: url(images/sushibanner.JPG) no-repeat center;
-    background-size: cover;
-    height: 400px;
-    margin-top:15px;
-    margin-bottom:15px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.banner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-h1 {
-    font-size: 26px;
-    color:white;
-    text-decoration: none;
-    padding-bottom: 100px;
-}
-
-.orderbutton {
-    background-color: orange;
-    color: white;
-    padding: 15px;
-}
-
-.left-arrow {
-    right: 0;
-    top:0;
-    padding-top: 200px;
-    width:100px;
-    height:200px;
-    pointer-events:none;
-    z-index:10;
-    background: url(images/left-arrow.png) center center no-repeat;
-    background-size: 60%;
-}
-
-.right-arrow {
-    position: absolute;
-    right: 0;
-    top:0;
-    padding-top: 200px;
-    width:100px;
-    height:200px;
-    pointer-events:none;
-    z-index:10;
-    background: url(images/right-arrow.png) center center no-repeat;
-    background-size: 60%;
-}
-
-/* START OF GRIDS */
- .main-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: orange;
-    margin-top: 10px;
-    
-
- }
-.grids {
-    position:relative;
-    margin: 0 auto;
-    max-width: 1000px;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
-    gap:20px;
-    padding-top: 30px; 
-    padding-bottom: 30px;
-}
-
-
-.sushi-virtical {
-    position: relative;
-    margin: 0 auto;
-    width: 100%;
-    height: 301px;
-    width: 179px;
-}
-
-.grid-one-text {
-    line-height: 1.5;
-    font-size: 0.9em;
-    padding: 15px;
-    background-color: lightskyblue;
-}
-
-/* END OF FIRST GRID */
-
-.second-grid {
-    align-items: center;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
- }
-.seconds {
-    max-width: 100vw;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
-    gap:5rem;
-    padding-top: 30px; 
-}
-
-.space {
-    padding: 15px;
-}
-
-.form {
-   display:inline-flex;
-   border-style: solid;
-   align-items: left;
-   border-width: 2px;
-   border-color: purple;
-   padding-left: 50px;
-   padding-right: 50px;
-}
-
-.instagramfeed {
-    position: relative;
-    margin: 0 auto;
-    width: 400px ;
-    height: 290px;
-}
-
-.second-text-one {
-    line-height: 1.5;
-    font-size: 0.9em;
-    padding: 15px;
-    
-}
-/* FOOTER */
-footer {
-    padding-top: 25px;
-}
-.footers {
-    background-color: orange;
- }
-
-.bottom {
-    position:relative;
-    margin: 0 auto;
-    max-width: 100vw;
-    display: grid;
-    align-content: space-between;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: space-between;
-    padding-top: 30px; 
-    padding-bottom: 30px;
-}
-
-.information {
-    font-size: 18px;
-    padding: 5px;
-}
-.footer-01 {
-    text-align: left;
-}
-
-.footer-o2 {
-    padding-top: 20px;
-    text-align: left;
-}
-.footer-o3 {
-    padding-top: 20px;
-    display: inline-table;
-
-}
-
-.footer-o4 {
-    padding-top: 20px;
-}
-
-
-@media screen and (min-width: 760px) {
+@media screen and (max-width: 760px) {
     html {
         height: 100%;
         margin: auto;
-        overflow:visible;
+        overflow: visible;
     }
-    
+
     body {
         padding: 0;
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
         text-align: center;
-        
     }
-    
+
     header {
         background-color: white;
     }
-    
+
     .blue {
         background-color: aqua;
         padding: 15px;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 28px;
+        font-size: 18px;
     }
-    
+
     header li {
         display: inline;
         padding-left: 60px;
     }
-    
+
     header li a {
-        color:black;
+        color: black;
         text-decoration: none;
         padding: 13px;
         transition: 0.3 ease-in;
     }
-    
+
     header li:hover {
-        color:beige;
+        color: beige;
     }
-    
+
     header li a:hover {
-        color:beige;
+        color: beige;
     }
-    
+
     .logo {
         width: 300px;
         height: 250px;
-    
+
     }
-    
+
     .logodiv {
-        background-color:white;
+        background-color: white;
         height: 200px;
     }
-    
+
     #cart-logo {
         width: 30px;
         height: 30px;
     }
-    
+
     /* END OF NAV BAR CSS */
-    
+
     .main-image {
         position: relative;
         background: url(images/sushibanner.JPG) no-repeat center;
         background-size: cover;
         height: 400px;
-        margin-top:15px;
-        margin-bottom:15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
         margin-left: 20px;
         margin-right: 20px;
     }
-    
+
     .banner {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    
+
     h1 {
         font-size: 26px;
-        color:white;
+        color: white;
         text-decoration: none;
         padding-bottom: 100px;
     }
-    
+
     .orderbutton {
         background-color: orange;
         color: white;
         padding: 15px;
     }
-    
+
     .left-arrow {
-        position: center;
         right: 0;
-        top:0;
+        top: 0;
         padding-top: 200px;
-        width:100px;
-        height:200px;
-        pointer-events:none;
-        z-index:10;
+        width: 100px;
+        height: 200px;
+        pointer-events: none;
+        z-index: 10;
         background: url(images/left-arrow.png) center center no-repeat;
         background-size: 60%;
     }
-    
+
     .right-arrow {
         position: absolute;
         right: 0;
-        top:0;
+        top: 0;
         padding-top: 200px;
-        width:100px;
-        height:200px;
-        pointer-events:none;
-        z-index:10;
+        width: 100px;
+        height: 200px;
+        pointer-events: none;
+        z-index: 10;
         background: url(images/right-arrow.png) center center no-repeat;
         background-size: 60%;
     }
-    
+
     /* START OF GRIDS */
-     .main-grid {
+    .main-grid {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: orange;
         margin-top: 10px;
-        
-    
-     }
+
+
+    }
+
     .grids {
-        position:relative;
+        position: relative;
         margin: 0 auto;
         max-width: 1000px;
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(3, 1fr);
-        gap:20px;
-        padding-top: 30px; 
+        gap: 20px;
+        padding-top: 30px;
         padding-bottom: 30px;
     }
-    
-    .grid {
-        box-shadow: 0 0 6px gray( 0, 0, 0.1)
-    }
-    
+
+
     .sushi-virtical {
+        position: relative;
+        margin: 0 auto;
         width: 100%;
-        height: 601px;
-        width: 479px;
+        height: 301px;
+        width: 179px;
     }
-    
+
     .grid-one-text {
         line-height: 1.5;
         font-size: 0.9em;
         padding: 15px;
         background-color: lightskyblue;
     }
-    
+
     /* END OF FIRST GRID */
-    
+
     .second-grid {
-        display: flex;
-        justify-content: center;
         align-items: center;
         margin-top: 10px;
-        
-    
-     }
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .seconds {
-        position:relative;
-        margin: 0 auto;
-        max-width: 1000px;
+        max-width: 100vw;
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(2, 1fr);
-        gap:90px;
-        padding-top: 30px; 
+        gap: 5rem;
+        padding-top: 30px;
     }
-    
-    .second {
-        box-shadow: 0 0 6px gray( 0, 0, 0.1)
-    }
-    
+
     .space {
         padding: 15px;
     }
-    
+
     .form {
-       display:inline-flex;
-       border-style: solid;
-       align-items: left;
-       border-width: 2px;
-       border-color: purple;
-       padding-left: 50px;
-       padding-right: 50px;
+        display: inline-flex;
+        border-style: solid;
+        align-items: left;
+        border-width: 2px;
+        border-color: purple;
+        padding-left: 50px;
+        padding-right: 50px;
     }
-    
+
     .instagramfeed {
-        width: 600px ;
-        height: 490px;
+        position: relative;
+        margin: 0 auto;
+        width: 400px;
+        height: 290px;
     }
-    
+
     .second-text-one {
         line-height: 1.5;
         font-size: 0.9em;
         padding: 15px;
-        
+
     }
+
     /* FOOTER */
     footer {
         padding-top: 25px;
     }
+
     .footers {
         background-color: orange;
-     }
-    
+    }
+
     .bottom {
-        position:relative;
+        position: relative;
         margin: 0 auto;
         max-width: 100vw;
         display: grid;
         align-content: space-between;
         grid-template-columns: repeat(4, 1fr);
         justify-content: space-between;
-        padding-top: 30px; 
+        padding-top: 30px;
         padding-bottom: 30px;
     }
-    
+
     .information {
         font-size: 18px;
         padding: 5px;
     }
+
     .footer-01 {
         text-align: left;
     }
-    
+
+    .footer-o2 {
+        padding-top: 20px;
+        text-align: left;
+    }
+
+    .footer-o3 {
+        padding-top: 20px;
+        display: inline-table;
+
+    }
+
+    .footer-o4 {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    html {
+        height: 100%;
+        margin: auto;
+        overflow: visible;
+    }
+
+    body {
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        text-align: center;
+
+    }
+
+    header {
+        background-color: white;
+    }
+
+    .blue {
+        background-color: aqua;
+        padding: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 28px;
+    }
+
+    header li {
+        display: inline;
+        padding-left: 60px;
+    }
+
+    header li a {
+        color: black;
+        text-decoration: none;
+        padding: 13px;
+        transition: 0.3 ease-in;
+    }
+
+    header li:hover {
+        color: beige;
+    }
+
+    header li a:hover {
+        color: beige;
+    }
+
+    .logo {
+        width: 300px;
+        height: 250px;
+
+    }
+
+    .logodiv {
+        background-color: white;
+        height: 200px;
+    }
+
+    #cart-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* END OF NAV BAR CSS */
+
+    .main-image {
+        position: relative;
+        background: url(images/sushibanner.JPG) no-repeat center;
+        background-size: cover;
+        height: 400px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .banner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1 {
+        font-size: 26px;
+        color: white;
+        text-decoration: none;
+        padding-bottom: 100px;
+    }
+
+    .orderbutton {
+        background-color: orange;
+        color: white;
+        padding: 15px;
+    }
+
+    .left-arrow {
+        position: center;
+        right: 0;
+        top: 0;
+        padding-top: 200px;
+        width: 100px;
+        height: 200px;
+        pointer-events: none;
+        z-index: 10;
+        background: url(images/left-arrow.png) center center no-repeat;
+        background-size: 60%;
+    }
+
+    .right-arrow {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-top: 200px;
+        width: 100px;
+        height: 200px;
+        pointer-events: none;
+        z-index: 10;
+        background: url(images/right-arrow.png) center center no-repeat;
+        background-size: 60%;
+    }
+
+    /* START OF GRIDS */
+    .main-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: orange;
+        margin-top: 10px;
+
+
+    }
+
+    .grids {
+        position: relative;
+        margin: 0 auto;
+        max-width: 1000px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .grid {
+        box-shadow: 0 0 6px gray(0, 0, 0.1)
+    }
+
+    .sushi-virtical {
+        width: 100%;
+        height: 601px;
+        width: 479px;
+    }
+
+    .grid-one-text {
+        line-height: 1.5;
+        font-size: 0.9em;
+        padding: 15px;
+        background-color: lightskyblue;
+    }
+
+    /* END OF FIRST GRID */
+
+    .second-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+
+
+    }
+
+    .seconds {
+        position: relative;
+        margin: 0 auto;
+        max-width: 1000px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 90px;
+        padding-top: 30px;
+    }
+
+    .second {
+        box-shadow: 0 0 6px gray(0, 0, 0.1)
+    }
+
+    .space {
+        padding: 15px;
+    }
+
+    .form {
+        display: inline-flex;
+        border-style: solid;
+        align-items: left;
+        border-width: 2px;
+        border-color: purple;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .instagramfeed {
+        width: 600px;
+        height: 490px;
+    }
+
+    .second-text-one {
+        line-height: 1.5;
+        font-size: 0.9em;
+        padding: 15px;
+
+    }
+
+    /* FOOTER */
+    footer {
+        padding-top: 25px;
+    }
+
+    .footers {
+        background-color: orange;
+    }
+
+    .bottom {
+        position: relative;
+        margin: 0 auto;
+        max-width: 100vw;
+        display: grid;
+        align-content: space-between;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .information {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .footer-01 {
+        text-align: left;
+    }
+
     .footer-o2 {
         padding-top: 27px;
         text-align: left;
@@ -543,9 +560,9 @@ footer {
     }
 
     #social li {
-        display:inline-block;
+        display: inline-block;
     }
-    
+
     .footer-o4 {
         padding-top: 20px;
     }
@@ -567,6 +584,7 @@ footer {
     background-color: orange;
     color: white;
 }
+
 .aboutus {
     padding-left: 100px;
     padding-right: 100px;
@@ -582,25 +600,27 @@ footer {
 }
 
 .last {
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
+
 /* footer */
 footer {
     padding-top: 25px;
 }
+
 .footers {
     background-color: orange;
- }
+}
 
 .bottom {
-    position:relative;
+    position: relative;
     margin: 0 auto;
     max-width: 100vw;
     display: grid;
     align-content: space-between;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
-    padding-top: 30px; 
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -608,6 +628,7 @@ footer {
     font-size: 18px;
     padding: 5px;
 }
+
 .footer-01 {
     text-align: left;
 }
@@ -623,7 +644,7 @@ footer {
 }
 
 #social li {
-    display:inline-block;
+    display: inline-block;
 }
 
 .footer-o4 {
@@ -637,18 +658,19 @@ footer {
     align-items: center;
     background-color: orange;
     margin-top: 10px;
-    
 
- }
+
+}
+
 .service {
-    position:relative;
+    position: relative;
     margin: 0 auto;
     max-width: 1000px;
     display: grid;
     justify-content: center;
     grid-template-rows: repeat(3, 1fr);
-    gap:20px;
-    padding-top: 30px; 
+    gap: 20px;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -671,19 +693,20 @@ footer {
 footer {
     padding-top: 25px;
 }
+
 .footers {
     background-color: orange;
- }
+}
 
 .bottom {
-    position:relative;
+    position: relative;
     margin: 0 auto;
     max-width: 100vw;
     display: grid;
     align-content: space-between;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
-    padding-top: 30px; 
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -691,6 +714,7 @@ footer {
     font-size: 18px;
     padding: 5px;
 }
+
 .footer-01 {
     text-align: left;
 }
@@ -706,7 +730,7 @@ footer {
 }
 
 #social li {
-    display:inline-block;
+    display: inline-block;
 }
 
 .footer-o4 {
@@ -715,4 +739,3 @@ footer {
 
 /* https://www.freepnglogos.com/images/shopping-cart-20391.html */
 /* https://www.freeiconspng.com/downloadimg/41944 */
-
