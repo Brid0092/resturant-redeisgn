@@ -47,16 +47,28 @@
                     <div class="grid-one-text">
                         <p>ALL YOU CAN EAT</p>
                     </div>
-                    <img src="images/sushi-tray.JPG" srcset="images/sushi-tray.JPG
-                                images/sushi-tray-401.png 2x">
+                    <picture>
+                        <source srcset="images/sushi-tray.JPG,
+                                        images/sushi-tray-401.png 2x" media="(max-width: 760px)">
+                        <img src="images/sushi-tray.JPG" alt="placeholder" />
+                    </picture>
                 </div>
 
                 <div class="grid">
                     <div class="grid-one-text">
                         <p>INDIVIDUAL</p>
                     </div>
-                    <source src="images/single-roll.JPG" srcset="images/single-roll.JPG 500w
-                                images/single-roll-401.png 760w" media="(max-width: 1280px)" />
+                    <picture>
+                        <source srcset="images/sushi-roll.JPG,
+                        images/sushi-roll-401.png 2x"
+                        media="(min-width: 960px)" />
+                  
+                        <img src="images/sushi-roll.JPG" alt="placeholder">
+                      </picture>
+
+
+                    <!-- <source src="images/single-roll.JPG" srcset="images/single-roll.JPG 500w
+                                images/single-roll-401.png 760w" media="(max-width: 1280px)" /> -->
 
                 </div>
 
