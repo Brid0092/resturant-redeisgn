@@ -54,7 +54,7 @@ table {
 }
 
 
-/* CSS RESET */
+/* END OF CSS RESET */
 
 @media screen and (max-width: 760px) {
     html {
@@ -65,7 +65,7 @@ table {
 
     body {
         padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Domus Titling', Arial, Helvetica, sans-serif;
         margin: 0;
         text-align: center;
     }
@@ -75,46 +75,33 @@ table {
     }
 
     .blue {
-        background-color: aqua;
+        background-color: #9AD0E1;
         padding: 15px;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 18px;
-    }
-
-    header li {
-        display: inline;
-        padding-left: 60px;
-    }
-
-    header li a {
-        color: black;
-        text-decoration: none;
-        padding: 13px;
-        transition: 0.3 ease-in;
-    }
-
-    header li:hover {
-        color: beige;
-    }
-
-    header li a:hover {
-        color: beige;
+        font-size: 0px;
     }
 
     .logo {
         width: 300px;
         height: 250px;
-
     }
 
     .logodiv {
+        display:grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 0em;;
         background-color: white;
         height: 200px;
     }
 
+    .hamburger {
+        margin-top: 90px;
+        width:40px;
+        height:40px;
+    }
+
     #cart-logo {
-        width: 30px;
-        height: 30px;
+        display: none;
     }
 
     /* END OF NAV BAR CSS */
@@ -148,6 +135,7 @@ table {
         background-color: orange;
         color: white;
         padding: 15px;
+        font-family: 'OmnesArabic', Arial, Helvetica, sans-serif;
     }
 
     .left-arrow {
@@ -200,18 +188,15 @@ table {
 
 
     .sushi-virtical {
-        position: relative;
-        margin: 0 auto;
-        width: 100%;
-        height: 301px;
-        width: 179px;
+       /* width: 100%; */
     }
 
     .grid-one-text {
+        font-family: 'Domus Titling', Arial, Helvetica, sans-serif;
         line-height: 1.5;
         font-size: 0.9em;
         padding: 15px;
-        background-color: lightskyblue;
+        background-color: #9AD0E1;
     }
 
     /* END OF FIRST GRID */
@@ -263,6 +248,7 @@ table {
     /* FOOTER */
     footer {
         padding-top: 25px;
+        font-family: 'Domus Titling', Arial, Helvetica, sans-serif;
     }
 
     .footers {
@@ -282,8 +268,13 @@ table {
     }
 
     .information {
-        font-size: 18px;
+        font-size: 12px;
         padding: 5px;
+    }
+
+    .left {
+        font-size: 12px;
+        font-family: 'OmnesArabic', Arial, Helvetica, sans-serif;
     }
 
     .footer-01 {
@@ -298,11 +289,18 @@ table {
     .footer-o3 {
         padding-top: 20px;
         display: inline-table;
-
+        word-spacing: 30px;
     }
 
     .footer-o4 {
         padding-top: 20px;
+        margin-right: 5px;
+    }
+
+    .fa {
+        color: #9AD0E1;
+        width: 5px;
+        height: 5px;
     }
 }
 
@@ -323,6 +321,10 @@ table {
 
     header {
         background-color: white;
+    }
+
+    .hamburger {
+        display: none;
     }
 
     .blue {

@@ -13,9 +13,12 @@
 <body>
     <header>
         <div class="logodiv">
-            <ul>
-                <li> <img class="logo" src="images/fishlogo.png" alt="orangefish-logo"></li>
-            </ul>
+            <div>
+                <img class="hamburger" src="images/hamburger.png" alt="hamburger-menu"></li>
+            </div>
+            <div>
+                <img class="logo" src="images/fishlogo.png" alt="orangefish-logo">
+            </div>
         </div>
         <ul class="blue">
             <li><a href="index.html"></a> Home</li>
@@ -44,21 +47,25 @@
                     <div class="grid-one-text">
                         <p>ALL YOU CAN EAT</p>
                     </div>
-                    <img src="images/sushi-tray.JPG" alt="sushitray" class="sushi-virtical">
+                    <img src="images/sushi-tray.JPG" srcset="images/sushi-tray.JPG
+                                images/sushi-tray-401.png 2x">
                 </div>
 
                 <div class="grid">
                     <div class="grid-one-text">
                         <p>INDIVIDUAL</p>
                     </div>
-                    <img src="images/single-roll.JPG" alt="sushitray" class="sushi-virtical">
+                    <source src="images/single-roll.JPG" srcset="images/single-roll.JPG 500w
+                                images/single-roll-401.png 760w" media="(max-width: 1280px)" />
+
                 </div>
 
                 <div class="grid">
                     <div class="grid-one-text">
                         <p>DRINKS</p>
                     </div>
-                    <img src="images/drinks.JPG" alt="sushitray" class="sushi-virtical">
+                    <img src="images/drinks.JPG" srcset="images/drinks.JPG 500w
+                                images/drinks-401.png 760w">
                 </div>
             </div>
         </section>
