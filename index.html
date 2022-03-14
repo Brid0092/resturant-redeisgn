@@ -14,22 +14,20 @@
     <header>
         <div class="logodiv">
             <div>
-                <img class="hamburger" src="images/hamburger.png" alt="hamburger-menu"></li>
-            </div>
-            <div>
                 <img class="logo" src="images/fishlogo.png" alt="orangefish-logo">
             </div>
         </div>
-        <ul class="blue">
-            <li><a href="index.html"></a> Home</li>
-            <li><a href="index.html"></a> Menu</li>
-            <li><a href="services.html"></a>Services</li>
-            <li><a href="index.html"></a>Contact</li>
-            <li><a href="index.html"></a> Profile</li>
-            <li><a href="aboutus.html"></a>About Us</li>
-            <li><img id="cart-logo" src="images/shopping-cart-20391.png" alt="shopping-cart"></li>
-        </ul>
-
+        <div>
+            <ul class="blue">
+                <li><a href="index.html"></a> Home</li>
+                <li><a href="index.html"></a> Menu</li>
+                <li><a href="services.html"></a>Services</li>
+                <li><a href="index.html"></a>Contact</li>
+                <li><a href="index.html"></a> Profile</li>
+                <li><a href="aboutus.html"></a>About Us</li>
+                <li><img id="cart-logo" src="images/shopping-cart-20391.png" alt="shopping-cart"></li>
+            </ul>
+        </div>
     </header>
     <main>
         <div class="main-image">
@@ -47,37 +45,21 @@
                     <div class="grid-one-text">
                         <p>ALL YOU CAN EAT</p>
                     </div>
-                    <picture>
-                        <source srcset="images/sushi-tray.JPG,
-                                        images/sushi-tray-401.png 2x" media="(max-width: 760px)">
-                        <img src="images/sushi-tray.JPG" alt="placeholder" />
-                    </picture>
+                    <img class="sushi-virtical" src="images/sushi-tray.JPG" alt="sushi-tray">
                 </div>
 
                 <div class="grid">
                     <div class="grid-one-text">
                         <p>INDIVIDUAL</p>
                     </div>
-                    <picture>
-                        <source srcset="images/sushi-roll.JPG,
-                        images/sushi-roll-401.png 2x"
-                        media="(min-width: 960px)" />
-                  
-                        <img src="images/sushi-roll.JPG" alt="placeholder">
-                      </picture>
-
-
-                    <!-- <source src="images/single-roll.JPG" srcset="images/single-roll.JPG 500w
-                                images/single-roll-401.png 760w" media="(max-width: 1280px)" /> -->
-
+                    <img class="sushi-virtical" src="images/single-roll.JPG" alt="sushi-rolls">
                 </div>
 
                 <div class="grid">
                     <div class="grid-one-text">
                         <p>DRINKS</p>
                     </div>
-                    <img src="images/drinks.JPG" srcset="images/drinks.JPG 500w
-                                images/drinks-401.png 760w">
+                    <img class="sushi-virtical" src="images/drinks.JPG" alt="milk-tea">
                 </div>
             </div>
         </section>
@@ -104,7 +86,7 @@
                             </div>
                             <div class="space">
                                 <label for="comments">Comment</label>
-                                <input name="Comment">
+                                <input id="comments" name="Comment">
                             </div>
                             <div class="space">
                                 <button>SUBMIT</button>
@@ -112,12 +94,12 @@
                         </form>
                     </div>
 
-                    <div class="second-text-one">
-                        <p>OUR LOCATION</p>
+                    <div class="map" >
+                        <p class="second-text-one">OUR LOCATION</p>
                     </div>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179163.3040035708!2d-75.73689159240782!3d45.44105843707855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04fd62226683%3A0xd9b339b474703ad5!2sHokkaido%20Sushi!5e0!3m2!1sen!2sca!4v1646268584737!5m2!1sen!2sca"
-                        width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        class="map-01" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
                 </div>
             </div>

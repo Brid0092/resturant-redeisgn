@@ -53,8 +53,29 @@ table {
     border-spacing: 0;
 }
 
+/* adding all my animations above the main css */
+@keyframes gridscolor {
+  0% {
+    background-color:#EA6C3E;
+  }
 
-/* END OF CSS RESET */
+  50% {
+      background-color:#9E5D71;
+  }
+}
+
+.main-grid:hover {
+    animation: gridscolor 4s;
+}
+
+.sushi-virtical:hover {
+    transition-duration: 0.5s;
+    transition: 0.5s ease-in;
+    opacity:0.2; 
+    
+}
+
+/* END OF CSS RESET ------------------------------------------------*/
 
 @media screen and (max-width: 760px) {
     html {
@@ -76,234 +97,243 @@ table {
 
     .blue {
         background-color: #9AD0E1;
-        padding: 15px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 0px;
+        padding: 10px;
+        font-family: 'Domus Titling',Arial, Helvetica, sans-serif;
+        font-size: 15px;
     }
 
     .logo {
-        width: 300px;
-        height: 250px;
-    }
-
-    .logodiv {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        column-gap: 0em;
-        ;
-        background-color: white;
-        height: 200px;
-    }
-
-    .hamburger {
-        margin-top: 90px;
-        width: 40px;
-        height: 40px;
+        width: 200px;
+        height: 150px;
     }
 
     #cart-logo {
-        display: none;
+        width: 15px;
+        height: 15px;
     }
 
-    /* END OF NAV BAR CSS */
-
-    .main-image {
-        position: relative;
-        background: url(images/sushibanner.JPG) no-repeat center;
-        background-size: cover;
-        height: 400px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        margin-left: 20px;
-        margin-right: 20px;
+    header li {
+        display: inline;
+        padding-left: 10px;
     }
 
-    .banner {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    h1 {
-        font-size: 26px;
-        color: white;
+    header li a {
+        color: black;
         text-decoration: none;
-        padding-bottom: 100px;
+        margin: 10px;
+        transition: ease-in;
     }
 
-    .orderbutton {
-        background-color: #EA6C3E;
-        color: white;
-        padding: 15px;
-        font-family: 'OmnesArabic', Arial, Helvetica, sans-serif;
+    header li:hover {
+        color: black;
+        background-color:#EA6C3E;
     }
 
-    .left-arrow {
-        right: 0;
-        top: 0;
-        padding-top: 200px;
-        width: 100px;
-        height: 200px;
-        pointer-events: none;
-        z-index: 10;
-        background: url(images/left-arrow.png) center center no-repeat;
-        background-size: 60%;
-    }
+/* END OF NAV BAR CSS */
 
-    .right-arrow {
-        position: absolute;
-        right: 0;
-        top: 0;
-        padding-top: 200px;
-        width: 100px;
-        height: 200px;
-        pointer-events: none;
-        z-index: 10;
-        background: url(images/right-arrow.png) center center no-repeat;
-        background-size: 60%;
-    }
+.main-image {
+    position: relative;
+    background: url(images/sushibanner.JPG) no-repeat center;
+    background-size: cover;
+    height: 400px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
-    /* START OF GRIDS */
-    .main-grid {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #EA6C3E;
-        margin-top: 10px;
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 26px;
+    color: white;
+    background: rgba(255,255,255,0.4);
+    text-decoration: none;
+    margin-bottom: 80px;
+    padding: 10px;
+}
 
 
-    }
 
-    .grids {
-        position: relative;
-        margin: 0 auto;
-        max-width: 1000px;
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
+.orderbutton {
+    background-color: #EA6C3E;
+    color: white;
+    padding: 15px;
+    font-family: 'OmnesArabic', Arial, Helvetica, sans-serif;
+}
+
+.left-arrow {
+    right: 0;
+    top: 0;
+    padding-top: 200px;
+    width: 100px;
+    height: 200px;
+    pointer-events: none;
+    z-index: 10;
+    background: url(images/left-arrow.png) center center no-repeat;
+    background-size: 60%;
+}
+
+.right-arrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 200px;
+    width: 100px;
+    height: 200px;
+    pointer-events: none;
+    z-index: 10;
+    background: url(images/right-arrow.png) center center no-repeat;
+    background-size: 60%;
+}
+
+/* START OF GRIDS */
+.main-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EA6C3E;
+    margin-top: 10px;
 
 
-    .sushi-virtical {
-        /* width: 100%; */
-    }
+}
 
-    .grid-one-text {
-        font-family: 'Domus Titling', Arial, Helvetica, sans-serif;
-        line-height: 1.5;
-        font-size: 0.9em;
-        padding: 15px;
-        background-color: #9AD0E1;
-    }
+.grids {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
-    /* END OF FIRST GRID */
 
-    .second-grid {
-        align-items: center;
-        margin-top: 10px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+.sushi-virtical {
+    width: 174px;
+    height: 193px;
+}
 
-    .seconds {
-        max-width: 100vw;
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5rem;
-        padding-top: 30px;
-    }
+.grid-one-text {
+    font-family: 'Domus Titling', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background-color: #9AD0E1;
+}
 
-    .space {
-        padding: 15px;
-    }
+/* END OF FIRST GRID */
 
-    .form {
-        display: inline-flex;
-        border-style: solid;
-        align-items: left;
-        border-width: 15px;
-        border-color: #9E5D71;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
+.second-grid {
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
-    .instagramfeed {
-        position: relative;
-        margin: 0 auto;
-        width: 400px;
-        height: 290px;
-    }
+.seconds {
+    max-width: 100vw;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding-top: 30px;
+}
 
-    .second-text-one {
-        font-family: 'Domus Titling', Arial, Helvetica, sans-serif;
-        line-height: 1.5;
-        font-size: 25px;
-        padding: 15px;
 
-    }
+.space {
+    padding: 15px;
+}
 
-    /* FOOTER */
-    footer {
-        padding-top: 25px;
-        font-family: 'Domus Titling', Arial, Helvetica, sans-serif;
-    }
+.form {
+    display: inline-flex;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #9E5D71;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
-    .footers {
-        background-color: orange;
-    }
+.instagramfeed {
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+    height: 290px;
+    
+}
 
-    .bottom {
-        position: relative;
-        margin: 0 auto;
-        max-width: 100vw;
-        display: grid;
-        align-content: space-between;
-        grid-template-columns: repeat(4, 1fr);
-        justify-content: space-between;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
+.second-text-one {
+    font-family: 'Domus Titling', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 25px;
+    padding: 15px;
 
-    .information {
-        font-size: 12px;
-        padding: 5px;
-    }
+}
 
-    .left {
-        font-size: 12px;
-        font-family: 'OmnesArabic', Arial, Helvetica, sans-serif;
-    }
+/* FOOTER */
+footer {
+    padding-top: 25px;
+    font-family: 'Domus Titling', Arial, Helvetica, sans-serif;
+}
 
-    .footer-01 {
-        text-align: left;
-    }
+.footers {
+    background-color: orange;
+}
 
-    .footer-o2 {
-        padding-top: 20px;
-        text-align: left;
-    }
+.bottom {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100vw;
+    display: grid;
+    align-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
-    .footer-o3 {
-        padding-top: 20px;
-        display: inline-table;
-        word-spacing: 30px;
-    }
+.information {
+    font-size: 12px;
+    padding: 5px;
+}
 
-    .footer-o4 {
-        padding-top: 20px;
-        margin-right: 5px;
-    }
+.left {
+    font-size: 12px;
+    font-family: 'OmnesArabic', Arial, Helvetica, sans-serif;
+}
 
-    .fa {
-        color: #9AD0E1;
-        width: 5px;
-        height: 5px;
-    }
+.footer-01 {
+    text-align: left;
+}
+
+.footer-o2 {
+    padding-top: 20px;
+    text-align: left;
+}
+
+.footer-o3 {
+    padding-top: 20px;
+    display: inline-table;
+    word-spacing: 30px;
+}
+
+.footer-o4 {
+    padding-top: 20px;
+    margin-right: 5px;
+}
+
+.fa {
+    color: #9AD0E1;
+    width: 5px;
+    height: 5px;
+}
 }
 
 @media screen and (min-width: 760px) {
@@ -325,35 +355,28 @@ table {
         background-color: white;
     }
 
-    .hamburger {
-        display: none;
-    }
-
     .blue {
         background-color: #9AD0E1;
-        padding: 15px;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 28px;
+        padding-bottom: 5px;
     }
 
     header li {
         display: inline;
-        padding-left: 60px;
+        padding-left: 20px;
     }
 
     header li a {
         color: black;
         text-decoration: none;
         padding: 13px;
-        transition: 0.3 ease-in;
+        transition:ease-in;
     }
 
     header li:hover {
-        color: beige;
-    }
-
-    header li a:hover {
-        color: beige;
+        color: black;
+        background-color:#EA6C3E;
     }
 
     .logo {
@@ -395,8 +418,10 @@ table {
     h1 {
         font-size: 26px;
         color: white;
+        background: rgba(255,255,255,0.4);
         text-decoration: none;
-        padding-bottom: 100px;
+        margin-bottom: 80px;
+        padding: 10px;
     }
 
     .orderbutton {
@@ -406,7 +431,6 @@ table {
     }
 
     .left-arrow {
-        position: center;
         right: 0;
         top: 0;
         padding-top: 200px;
@@ -438,8 +462,6 @@ table {
         align-items: center;
         background-color: #EA6C3E;
         margin-top: 10px;
-
-
     }
 
     .grids {
@@ -454,21 +476,17 @@ table {
         padding-bottom: 30px;
     }
 
-    .grid {
-        box-shadow: 0 0 6px gray(0, 0, 0.1)
-    }
-
     .sushi-virtical {
-        width: 100%;
         height: 601px;
         width: 479px;
     }
 
     .grid-one-text {
         line-height: 1.5;
-        font-size: 0.9em;
+        font-size: 1.5em;
         padding: 15px;
         background-color: #9AD0E1;
+        font-family: 'Domus Titling', Arial, Helvetica, sans-serif;
     }
 
     /* END OF FIRST GRID */
@@ -478,8 +496,6 @@ table {
         justify-content: center;
         align-items: center;
         margin-top: 10px;
-
-
     }
 
     .seconds {
@@ -493,10 +509,6 @@ table {
         padding-top: 30px;
     }
 
-    .second {
-        box-shadow: 0 0 6px gray(0, 0, 0.1)
-    }
-
     .space {
         padding: 15px;
     }
@@ -504,7 +516,6 @@ table {
     .form {
         display: inline-flex;
         border-style: solid;
-        align-items: left;
         border-width: 10px;
         border-color: #9E5D71;
         padding-left: 50px;
@@ -520,6 +531,8 @@ table {
         line-height: 1.5;
         font-size: 0.9em;
         padding: 15px;
+        font-family: 'Domus Titling', Arial, Helvetica, sans-serif;
+        font-size: 30px;
 
     }
 
@@ -545,7 +558,8 @@ table {
     }
 
     .information {
-        font-size: 18px;
+        font-family: 'Domus Titling' ,Arial, Helvetica, sans-serif;
+        font-size: 5px;
         padding: 5px;
     }
 
@@ -570,24 +584,72 @@ table {
     .footer-o4 {
         padding-top: 20px;
     }
+
+    .fa {
+        color:#9AD0E1;
+    }
 }
 
+/* went the long way around for adjusting text and image sizes  */
+
+@media screen and (min-width: 760px){
+    .blue {
+        background-color: #9AD0E1;
+        font-family: 'Domus Titling', Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    #cart-logo {
+        width: 20px;
+        height: 20px;
+    }
+
+    .sushi-virtical {
+        height: 401px;
+        width: 279px;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .blue {
+        background-color: #9AD0E1;
+        font-family: 'Domus Titling', Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        padding: 10px;
+    }
+    
+    #cart-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .sushi-virtical {
+        height: 601px;
+        width: 479px;
+    }
+}
+
+/* end of small edits */
 /* END OF HOME PAGE MEDIA SCREEN */
-/* START OF ABOUT US PAGE NOT INCLUDING THE NAV OR FOOTER  */
+/* START OF ABOUT US PAGE NOT INCLUDING THE NAV */
 
 @media screen and (max-width: 760px) {
     .title {
         padding: 25px;
+        font-size:30px;
+        font-family: 'Domus Titling',Arial, Helvetica, sans-serif;
+    }
+
+    #txt #txt1 #txt2 #txt3 #txt4 {
+        font-family: 'OmnesArabic',Arial, Helvetica, sans-serif;
+        font-size: 20px;
     }
 
     .mission {
-        margin-top: 25px;
-        margin-left: 300px;
-        margin-right: 300px;
-        padding-bottom: 25px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-bottom: 50px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
         background-color: #EA6C3E;
         color: white;
     }
@@ -614,16 +676,19 @@ table {
 @media screen and (min-width: 760px) {
     .title {
         padding: 25px;
+        font-size:30px;
+        font-family: 'Domus Titling',Arial, Helvetica, sans-serif;
+    }
+
+    #txt #txt1 #txt2 #txt3 #txt4 {
+        font-family: 'OmnesArabic',Arial, Helvetica, sans-serif;
+        font-size: 20px;
     }
 
     .mission {
-        margin-top: 25px;
-        margin-left: 300px;
-        margin-right: 300px;
-        padding-bottom: 25px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-bottom: 50px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
         background-color: #EA6C3E;
         color: white;
     }
@@ -696,214 +761,178 @@ table {
     }
 }
 
-@media screen and (max-width: 760px) {
-    .title {
-        padding: 25px;
-    }
-
-    .mission {
-        margin-top: 25px;
-        margin-left: 300px;
-        margin-right: 300px;
-        padding-bottom: 25px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-bottom: 50px;
+/* START OF SERVICES PAGE NOT INCLUDING THE NAV */
+@media screen and (min-width: 760px) {
+    .services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #EA6C3E;
-        color: white;
+        margin-top: 10px;
     }
 
-    .aboutus {
-        padding-left: 100px;
-        padding-right: 100px;
+    .service {
+        position: relative;
+        margin: 0 auto;
+        max-width: 1000px;
+        display: grid;
+        justify-content: center;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
-    .space {
-        padding-top: 10px;
-        padding-bottom: 10px;
+
+    .sushi-horizontal {
+        width: 100%;
+        height: 252px;
+        width: 1782px;
     }
 
-    .about {
-        border: 2px solid #EA6C3E;
+    .service-text {
+        line-height: 1.5;
+        font-size: 1.5em;
+        padding: 15px;
+        background-color: #9AD0E1;
+        font-family: 'Domus Titling', Arial, Helvetica, sans-serif;
     }
 
-    .last {
-        margin-bottom: 30px;
+
+    /* footer */
+    footer {
+        padding-top: 25px;
     }
 
-    /* START OF SERVICES PAGE NOT INCLUDING THE NAV OR FOOTER */
-    @media screen and (min-width: 760px) {
-        .services {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #EA6C3E;
-            margin-top: 10px;
-
-
-        }
-
-        .service {
-            position: relative;
-            margin: 0 auto;
-            max-width: 1000px;
-            display: grid;
-            justify-content: center;
-            grid-template-rows: repeat(3, 1fr);
-            gap: 20px;
-            padding-top: 30px;
-            padding-bottom: 30px;
-        }
-
-
-        .sushi-horizontal {
-            width: 100%;
-            height: 252px;
-            width: 1782px;
-        }
-
-        .service-text {
-            line-height: 1.5;
-            font-size: 0.9em;
-            padding: 15px;
-            background-color: #9AD0E1;
-        }
-
-
-        /* footer */
-        footer {
-            padding-top: 25px;
-        }
-
-        .footers {
-            background-color: #EA6C3E;
-        }
-
-        .bottom {
-            position: relative;
-            margin: 0 auto;
-            max-width: 100vw;
-            display: grid;
-            align-content: space-between;
-            grid-template-columns: repeat(4, 1fr);
-            justify-content: space-between;
-            padding-top: 30px;
-            padding-bottom: 30px;
-        }
-
-        .information {
-            font-size: 18px;
-            padding: 5px;
-        }
-
-        .footer-01 {
-            text-align: left;
-        }
-
-        .footer-o2 {
-            padding-top: 27px;
-            text-align: left;
-        }
-
-        .footer-o3 {
-            display: inline-block;
-            padding-top: 20px;
-        }
-
-        #social li {
-            display: inline-block;
-        }
-
-        .footer-o4 {
-            padding-top: 20px;
-        }
+    .footers {
+        background-color: #EA6C3E;
     }
 
-    @media screen and (max-width: 760px) {
-        .services {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #EA6C3E;
-            margin-top: 10px;
-
-
-        }
-
-        .service {
-            position: relative;
-            margin: 0 auto;
-            max-width: 1000px;
-            display: grid;
-            justify-content: center;
-            grid-template-rows: repeat(3, 1fr);
-            gap: 20px;
-            padding-top: 30px;
-            padding-bottom: 30px;
-        }
-
-
-        .sushi-horizontal {
-            width: 100%;
-            height: 252px;
-            width: 1782px;
-        }
-
-        .service-text {
-            line-height: 1.5;
-            font-size: 0.9em;
-            padding: 15px;
-            background-color: #9AD0E1;
-        }
-
-
-        /* footer */
-        footer {
-            padding-top: 25px;
-        }
-
-        .footers {
-            background-color: #EA6C3E;
-        }
-
-        .bottom {
-            position: relative;
-            margin: 0 auto;
-            max-width: 100vw;
-            display: grid;
-            align-content: space-between;
-            grid-template-columns: repeat(4, 1fr);
-            justify-content: space-between;
-            padding-top: 30px;
-            padding-bottom: 30px;
-        }
-
-        .information {
-            font-size: 18px;
-            padding: 5px;
-        }
-
-        .footer-01 {
-            text-align: left;
-        }
-
-        .footer-o2 {
-            padding-top: 27px;
-            text-align: left;
-        }
-
-        .footer-o3 {
-            display: inline-block;
-            padding-top: 20px;
-        }
-
-        #social li {
-            display: inline-block;
-        }
-
-        .footer-o4 {
-            padding-top: 20px;
-        }
+    .bottom {
+        position: relative;
+        margin: 0 auto;
+        max-width: 100vw;
+        display: grid;
+        align-content: space-between;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
-    /* https://www.freepnglogos.com/images/shopping-cart-20391.html */
-    /* https://www.freeiconspng.com/downloadimg/41944 */
+
+    .information {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .footer-01 {
+        text-align: left;
+    }
+
+    .footer-o2 {
+        padding-top: 27px;
+        text-align: left;
+    }
+
+    .footer-o3 {
+        display: inline-block;
+        padding-top: 20px;
+    }
+
+    #social li {
+        display: inline-block;
+    }
+
+    .footer-o4 {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #EA6C3E;
+        margin-top: 10px;
+    }
+
+    .service {
+        position: relative;
+        margin: 0 auto;
+        max-width: 1000px;
+        display: grid;
+        justify-content: center;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+    .sushi-horizontal {
+        width: 100%;
+        height: 152px;
+        width: 782px;
+    }
+
+    .service-text {
+        line-height: 1.5;
+        font-size: 1em;
+        padding: 15px;
+        background-color: #9AD0E1;
+        font-family: 'Domus Tilting', Arial, Helvetica, sans-serif;
+    }
+
+
+    /* footer */
+    footer {
+        padding-top: 25px;
+    }
+
+    .footers {
+        background-color: #EA6C3E;
+    }
+
+    .bottom {
+        position: relative;
+        margin: 0 auto;
+        max-width: 100vw;
+        display: grid;
+        align-content: space-between;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .information {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .footer-01 {
+        text-align: left;
+    }
+
+    .footer-o2 {
+        padding-top: 27px;
+        text-align: left;
+    }
+
+    .footer-o3 {
+        display: inline-block;
+        padding-top: 20px;
+    }
+
+    #social li {
+        display: inline-block;
+    }
+
+    .footer-o4 {
+        padding-top: 20px;
+    }
+}
+
+/* https://www.freepnglogos.com/images/shopping-cart-20391.html */
+/* https://www.freeiconspng.com/downloadimg/41944 */
