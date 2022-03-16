@@ -53,8 +53,11 @@ table {
     border-spacing: 0;
 }
 
+/* END OF CSS RESET ------------------------------------------------*/
 /* adding all my animations above the main css */
-@keyframes gridscolor {
+
+/* changes main grid bkg color ;) */
+@keyframes gridscolor {            
     0% {
         background-color: #EA6C3E;
     }
@@ -68,6 +71,7 @@ table {
     animation: gridscolor 4s;
 }
 
+/* allows my main grid imgs to go transparent so you know you hovered over them */
 .sushi-virtical:hover {
     transition-duration: 0.5s;
     transition: 0.5s ease-in;
@@ -75,7 +79,6 @@ table {
 
 }
 
-/* END OF CSS RESET ------------------------------------------------*/
 /* starting with mobile */
 @media screen and (max-width: 760px) {
     html {
@@ -129,8 +132,9 @@ table {
         background-color: #EA6C3E;
     }
 
+    /* ^^^ that code is pretty straight forward */
     /* END OF NAV BAR CSS */
-
+    /* I made my main banner a bkg image and let it cover the whole space so it would adjust and zoom in based on the screen size */
     .main-image {
         position: relative;
         background: url(images/sushibanner.JPG) no-repeat center;
@@ -142,6 +146,7 @@ table {
         margin-right: 20px;
     }
 
+    /* the transition is what lets it zoom in */
     .banner {
         position: absolute;
         top: 50%;
@@ -158,15 +163,13 @@ table {
         padding: 10px;
     }
 
-
-
     .orderbutton {
         background-color: #EA6C3E;
         color: white;
         padding: 15px;
         font-family: 'OmnesArabic', Arial, Helvetica, sans-serif;
     }
-
+/* for the arrows i used z index to give them a higher stack level so they apear in front on the banner and had the right placement  */
     .left-arrow {
         right: 0;
         top: 0;
@@ -193,16 +196,15 @@ table {
     }
 
     /* START OF GRIDS */
+    /* I gave all my grids in the whole html a display of flex so they would take up the whole space without overflow */
     .main-grid {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #EA6C3E;
         margin-top: 10px;
-
-
     }
-
+/* making my grid have 3 columns and each one one fraction of the page */
     .grids {
         position: relative;
         margin: 0 auto;
@@ -214,7 +216,6 @@ table {
         padding-top: 30px;
         padding-bottom: 30px;
     }
-
 
     .sushi-virtical {
         width: 174px;
@@ -237,7 +238,7 @@ table {
         margin-left: 20px;
         margin-right: 20px;
     }
-
+/* i needed to give a vw of 100 so it would not surpass the page */
     .seconds {
         max-width: 100vw;
         display: grid;
@@ -251,7 +252,7 @@ table {
         padding: 15px;
         font-size: 10px;
     }
-
+/* I gave my form the display of inline flex because i wanted the elemets to be flexible while still taking up the same space on the page */
 
     .form {
         display: inline-flex;
@@ -265,7 +266,6 @@ table {
     .instagramfeed {
         width: 100%;
         height: 70%;
-
     }
 
     .second-text-one {
@@ -285,7 +285,7 @@ table {
     .footers {
         background-color: orange;
     }
-
+/* Again using grids to make 4 columns all one one fraction each and using justify content to make sure they have even spacing */
     .bottom {
         position: relative;
         margin: 0 auto;
@@ -299,9 +299,9 @@ table {
     }
 
     .information {
-        font-size: 12px;
-        padding: 5px;
-        font-family: 'OmnesArabic', Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        padding: 2px;
+        font-family: 'Domus Titling', Arial, Helvetica, sans-serif;
     }
 
     .left {
@@ -309,6 +309,7 @@ table {
         font-family: 'OmnesArabic', Arial, Helvetica, sans-serif;
     }
 
+    /* aligning some footer items to left to match the mockup */
     .footer-01 {
         text-align: left;
     }
@@ -318,9 +319,10 @@ table {
         text-align: left;
     }
 
+
     .footer-o3 {
         padding-top: 20px;
-        display: inline-table;
+        display: inline;
         word-spacing: 30px;
     }
 
@@ -334,10 +336,16 @@ table {
         width: 5px;
         height: 5px;
     }
+
+    .iframe {
+        width: 470px;
+        height: 150px;
+    }
 }
 
-/* start of desktop  */ 
-
+/* start of desktop  */
+/* I made all my htmls overflows visible so I could control when an element surpases the page */
+/* and this media screen is very similar to the first one */
 @media screen and (min-width: 760px) {
     html {
         height: 100%;
@@ -350,7 +358,6 @@ table {
         font-family: 'OmnesArabic', Arial, Helvetica, sans-serif;
         margin: 0;
         text-align: center;
-
     }
 
     header {
@@ -655,7 +662,7 @@ table {
         font-size: 30px;
         font-family: 'Domus Titling', Arial, Helvetica, sans-serif;
     }
-
+/* I had to give them all a dif name because elements cant have the same class */
     #txt #txt1 #txt2 #txt3 #txt4 {
         font-family: 'OmnesArabic', Arial, Helvetica, sans-serif;
         font-size: 20px;
@@ -787,6 +794,7 @@ table {
         margin-top: 10px;
     }
 
+    /* using display grid to have 3 even columns */
     .service {
         position: relative;
         margin: 0 auto;
@@ -799,7 +807,7 @@ table {
         padding-bottom: 30px;
     }
 
-
+    /* making sure all images are the same size */
     .sushi-horizontal {
         width: 100%;
         height: 252px;
@@ -813,7 +821,6 @@ table {
         background-color: #9AD0E1;
         font-family: 'Domus Titling', Arial, Helvetica, sans-serif;
     }
-
 
     /* footer */
     footer {
